@@ -2,7 +2,7 @@
 
 ## 구현할 기능 목록 정리
 - RandomNumberGenerator - 랜덤 숫자를 반환하는 책임
-- Number - 입력한 숫자 Type, 조건에 맞는지 검사하는 책임
+- Ball - 입력한 숫자 Type, 조건에 맞는지 검사하는 책임
 - Computer - 입력한 숫자에 대하여 게임 결과를 판정하는 책임
 - Game - 게임을 재시작 / 종료하는 책임
 - InputConsole - 입력 안내 UI
