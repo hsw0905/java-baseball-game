@@ -15,7 +15,7 @@ public class Ball {
   }
 
   public void validate(int num) {
-    if (num < 111 || num > 999) {
+    if (num < GameRule.MAX_LIMIT_NUMBER.getNum() || num > GameRule.MAX_LIMIT_NUMBER.getNum()) {
       throw new IllegalArgumentException("Wrong Input value");
     }
 
