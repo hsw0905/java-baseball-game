@@ -4,8 +4,7 @@ import static baseball.GameRule.*;
 
 import camp.nextstep.edu.missionutils.Randoms;
 
-public class RandomBall implements RandomBallGenerator{
-  @Override
+public class RandomBall {
   public Ball create(){
     StringBuilder builder = new StringBuilder();
 

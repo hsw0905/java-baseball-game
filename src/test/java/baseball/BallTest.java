@@ -14,6 +14,6 @@ public class BallTest {
   void createFail(int value) {
     assertThatCode(() -> new Ball(value))
         .isInstanceOf(IllegalArgumentException.class)
-        .hasMessage("Wrong Input value");
+        .hasMessage("잘못된 입력값입니다. 3자리 숫자를 입력해주세요.");
   }
 }

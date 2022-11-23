@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Ball {
 
-  private final String WRONG_INPUT_VALUE_MESSAGE = "Wrong Input value";
+  private final String WRONG_INPUT_VALUE_MESSAGE = "잘못된 입력값입니다. 3자리 숫자를 입력해주세요.";
   private final int num;
   private List<Integer> numList;
 
