@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Ball {
 
+  private final String WRONG_INPUT_VALUE_MESSAGE = "Wrong Input value";
   private final int num;
   private List<Integer> numList;
 
@@ -15,8 +16,8 @@ public class Ball {
   }
 
   public void validate(int num) {
-    if (num < GameRule.MAX_LIMIT_NUMBER.getNum() || num > GameRule.MAX_LIMIT_NUMBER.getNum()) {
-      throw new IllegalArgumentException("Wrong Input value");
+    if (num < GameRule.MIN_LIMIT_NUMBER.getNum() || num > GameRule.MAX_LIMIT_NUMBER.getNum()) {
+      throw new IllegalArgumentException(WRONG_INPUT_VALUE_MESSAGE);
     }
 
     numList = new ArrayList<>();

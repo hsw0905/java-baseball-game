@@ -10,7 +10,8 @@ public class RandomBallTest {
   @DisplayName("랜덤 3자리수를 생성한다.")
   @Test
   void createRandomNumbers() {
-    assertThatCode(RandomBall::create).doesNotThrowAnyException();
+    RandomBall ball = new RandomBall();
 
+    assertThatCode(ball::create).doesNotThrowAnyException();
   }
 }

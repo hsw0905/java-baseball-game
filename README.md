@@ -3,8 +3,9 @@
 ## 구현할 기능 목록 정리
 - RandomBall - 랜덤 숫자 Ball 을 반환하는 책임
 - Ball - 받은 숫자에 대하여 조건에 맞는지 검사하는 책임
-- Computer - RandomBall 과 사용자 Ball 에 대하여 게임 결과를 판정하는 책임
+- Judgement - RandomBall 과 사용자 Ball 에 대하여 게임 결과를 판정하는 책임
 - Game - 게임을 진행, 재시작 / 종료하는 책임
+- GameRule - 게임 규칙 상수를 제공하는 책임
 - InputConsole - 입력 안내 UI, 재시작/종료 여부 UI
 - OutputConsole - 게임 결과 출력 UI
 
