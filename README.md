@@ -2,11 +2,14 @@
 - (원본 출처: [우아한테크코스](https://github.com/woowacourse/java-baseball-precourse))
 
 ## 구현할 기능 목록 정리
-- [ ] BallNumber
-  - [ ] 1 ~ 9 까지 숫자 중 하나여야 한다.
-  - [ ] 1 ~ 9 범위의 숫자가 아니면 Exception 이 발생한다.
+- [x] BallNumber
+  - [x] 1 ~ 9 까지 숫자 중 하나여야 한다.
+  - [x] 1 ~ 9 범위의 숫자가 아니면 Exception 이 발생한다.
+- [x] BallPosition
+  - [x] 0 ~ 2 까지 숫자 중 하나여야 한다.
+  - [x] 0 ~ 2 범위의 숫자가 아니면 Exception 이 발생한다.
 - [ ] Ball
-  - [ ] 같은 위치, 같은 숫자이면 Strike 이다.
+  - [ ] BallNumber, BallPosition 을 사용해 생성한다. 
     
 
 ## 🔍 진행방식
