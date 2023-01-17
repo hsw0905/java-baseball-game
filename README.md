@@ -4,10 +4,8 @@
 ## 구현할 기능 목록 정리
 - [x] BallNumber
   - [x] 1 ~ 9 까지 숫자 중 하나여야 한다.
-  - [x] 1 ~ 9 범위의 숫자가 아니면 Exception 이 발생한다.
 - [x] BallPosition
   - [x] 0 ~ 2 까지 숫자 중 하나여야 한다.
-  - [x] 0 ~ 2 범위의 숫자가 아니면 Exception 이 발생한다.
 - [ ] Ball
   - [ ] BallNumber, BallPosition 을 사용해 생성한다. 
     
