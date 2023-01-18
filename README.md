@@ -2,18 +2,14 @@
 - (원본 출처: [우아한테크코스](https://github.com/woowacourse/java-baseball-precourse))
 
 ## 구현할 기능 목록 정리
-- [x] BallNumber
+- [x] Ball
   - [x] 1 ~ 9 까지 숫자 중 하나여야 한다.
-- [x] BallPosition
-  - [x] 0 ~ 2 까지 숫자 중 하나여야 한다.
-- [x] Judgement
-  - [x] Ball -> BallNumber, BallPosition 을 사용해 생성한다.
-  - [x] number, position 값이 같으면 strike 이다. 
-  - [x] 같은 number, 다른 position 값이면 ball 이다. 
-  - [x] 서로 다른 number 값이면 position 에 상관없이 nothing 이다.
+  - [x] 같은 숫자이면 같은 볼이다.
 - [x] Balls
   - [x] 반드시 3 개의 Ball 을 가져야 한다.
-  - [x] 각 볼끼리 숫자와 위치가 겹칠 수 없다.
+  - [x] 각 볼끼리 숫자가 겹칠 수 없다.
+- [ ] Judgement
+
     
 
 ## 🔍 진행방식

@@ -13,9 +13,9 @@ public class BallsTest {
   void mustContainThreeBall() {
     assertThatCode(() -> new Balls(
         Arrays.asList(
-            Ball.of(new BallNumber(1), new BallPosition(0)),
-            Ball.of(new BallNumber(2), new BallPosition(1)),
-            Ball.of(new BallNumber(3), new BallPosition(2))
+            Ball.from(new BallNumber(1)),
+            Ball.from(new BallNumber(2)),
+            Ball.from(new BallNumber(3))
         ))).doesNotThrowAnyException();
   }
 
@@ -24,22 +24,22 @@ public class BallsTest {
   void mustContainThreeBall2() {
     assertThatCode(() -> new Balls(
         Arrays.asList(
-            Ball.of(new BallNumber(1), new BallPosition(0)),
-            Ball.of(new BallNumber(2), new BallPosition(1))
+            Ball.from(new BallNumber(1)),
+            Ball.from(new BallNumber(2))
         ))).isInstanceOf(IllegalArgumentException.class)
         .hasMessage("반드시 3 개의 Ball 을 가져야 합니다.");
   }
 
-  @DisplayName("각 볼끼리 숫자와 위치가 겹칠 수 없다.")
+  @DisplayName("각 볼끼리 숫자가 겹칠 수 없다.")
   @Test
-  void mustNotDuplicateBall() {
+  void mustNotDuplicateNumber() {
     assertThatCode(() -> new Balls(
         Arrays.asList(
-            Ball.of(new BallNumber(1), new BallPosition(0)),
-            Ball.of(new BallNumber(2), new BallPosition(1)),
-            Ball.of(new BallNumber(2), new BallPosition(1))
+            Ball.from(new BallNumber(1)),
+            Ball.from(new BallNumber(2)),
+            Ball.from(new BallNumber(2))
         ))).isInstanceOf(IllegalArgumentException.class)
-        .hasMessage("각 볼끼리 숫자와 위치가 겹칠 수 없습니다.");
+        .hasMessage("각 볼끼리 숫자가 겹칠 수 없습니다.");
   }
 
 }
