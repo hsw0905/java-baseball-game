@@ -6,8 +6,11 @@
   - [x] 1 ~ 9 까지 숫자 중 하나여야 한다.
 - [x] BallPosition
   - [x] 0 ~ 2 까지 숫자 중 하나여야 한다.
-- [ ] Ball
-  - [ ] BallNumber, BallPosition 을 사용해 생성한다. 
+- [x] Ball
+  - [x] BallNumber, BallPosition 을 사용해 생성한다.
+  - [x] number, position 값이 같으면 strike 이다. 
+  - [x] 같은 number, 다른 position 값이면 ball 이다. 
+  - [x] 서로 다른 number 값이면 position 에 상관없이 nothing 이다. 
     
 
 ## 🔍 진행방식
