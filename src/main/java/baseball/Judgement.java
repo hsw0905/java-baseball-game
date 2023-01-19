@@ -1,8 +1,6 @@
 package baseball;
 
 
-import java.util.function.BiPredicate;
-
 public enum Judgement {
   STRIKE("스트라이크"),
 

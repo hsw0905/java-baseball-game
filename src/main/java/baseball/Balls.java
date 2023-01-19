@@ -8,22 +8,13 @@ public class Balls {
 
   private static final String WRONG_LIST_SIZE_MESSAGE = "반드시 3 개의 Ball 을 가져야 합니다.";
   private static final String DUPLICATED_NUMBER_MESSAGE = "각 볼끼리 숫자가 겹칠 수 없습니다.";
-  private static final String DUPLICATED_POSITION_MESSAGE = "각 볼끼리 위치가 겹칠 수 없습니다.";
   private final List<Ball> balls;
 
 
   public Balls(List<Ball> balls) {
     validateSize(balls);
     validateDuplicateNumber(balls);
-    validateDuplicatePosition(balls);
     this.balls = balls;
-  }
-
-  private void validateDuplicatePosition(List<Ball> balls) {
-    Set<Integer> positionSet = new HashSet<>();
-
-
-
   }
 
   private void validateSize(List<Ball> balls) {
@@ -39,10 +30,4 @@ public class Balls {
     }
   }
 
-
-  public GameResult play(Balls userBalls) {
-
-
-    return null;
-  }
 }

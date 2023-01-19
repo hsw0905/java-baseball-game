@@ -17,9 +17,14 @@ public class BallNumber {
     return number;
   }
 
+  public Ball toBall() {
+    return new Ball(this);
+  }
+
   private void validateNumber(int number) {
     if (number < MIN_NUMBER || number > MAX_NUMBER){
       throw new IllegalArgumentException(WRONG_NUMBER_RANGE_MESSAGE);
     }
   }
+
 }
