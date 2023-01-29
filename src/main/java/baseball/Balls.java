@@ -33,7 +33,7 @@ public class Balls {
   }
 
   public Ball getBallAt(int index) {
-    if (index < 0 || index >MAX_BALL_SIZE) {
+    if (index < 0 || index > MAX_BALL_SIZE) {
       throw new IllegalArgumentException(WRONG_BALLS_INDEX_RANGE_MASSAGE);
     }
     return balls.get(index);
